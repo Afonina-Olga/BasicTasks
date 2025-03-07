@@ -9,3 +9,5 @@ var vol = Convert.ToDouble(Console.ReadLine());
 var cons = (100 * vol) / distance;
 
 Console.WriteLine($"Автомобиль прошел {distance} км, потратил {vol} литров топлива. Средний расход - {cons} л / 100 км");
+
+// TODO Показать if

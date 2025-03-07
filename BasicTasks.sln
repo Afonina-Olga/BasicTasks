@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FuelConsumptionCalculator",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuotientAndRemainder", "QuotientAndRemainder\QuotientAndRemainder.csproj", "{74ACE2D9-1433-4335-AA15-B06A41F21F34}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Swap", "Swap\Swap.csproj", "{5FA79F67-B110-4C8D-8B2F-76D6E826D598}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaxOfThree", "MaxOfThree\MaxOfThree.csproj", "{9C2E32F8-2E13-4075-AAB0-3F7BADE5AD12}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{74ACE2D9-1433-4335-AA15-B06A41F21F34}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{74ACE2D9-1433-4335-AA15-B06A41F21F34}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{74ACE2D9-1433-4335-AA15-B06A41F21F34}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FA79F67-B110-4C8D-8B2F-76D6E826D598}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FA79F67-B110-4C8D-8B2F-76D6E826D598}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FA79F67-B110-4C8D-8B2F-76D6E826D598}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FA79F67-B110-4C8D-8B2F-76D6E826D598}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C2E32F8-2E13-4075-AAB0-3F7BADE5AD12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C2E32F8-2E13-4075-AAB0-3F7BADE5AD12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C2E32F8-2E13-4075-AAB0-3F7BADE5AD12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C2E32F8-2E13-4075-AAB0-3F7BADE5AD12}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
