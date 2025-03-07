@@ -32,5 +32,7 @@ if (answer2 == "3")
 	result++;
 }
 
+// TODO
+
 Console.WriteLine($"Вы ответили верно на {result} вопросов из {count}");
 
