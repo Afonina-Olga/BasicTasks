@@ -77,3 +77,16 @@ if (c >= max)
 Console.WriteLine($"Max = {max}");
 
 #endregion
+
+#region И наконец
+
+max = Max(a, Max(b, c));
+
+static int Max(int a, int b)
+{
+	return a >= b ? a : b;
+}
+
+Console.WriteLine($"Max = {max}");
+
+#endregion
