@@ -1,7 +1,4 @@
-﻿using System.Numerics;
-using static System.Runtime.InteropServices.JavaScript.JSType;
-
-namespace NumberSystems
+﻿namespace NumberSystems
 {
 	public static class Converter
 	{
