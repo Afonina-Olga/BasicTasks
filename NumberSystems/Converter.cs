@@ -73,38 +73,56 @@ namespace NumberSystems
 
 			for (int i = 0; i < number.Length; i++)
 			{
-				if (number[number.Length - i - 1] == '1')
+				var current = int.Parse(number[number.Length - i - 1].ToString());
+
+				if (current != '0')
 				{
-					result += (int)Math.Pow(fromBase, i);
+					result += current * (int)Math.Pow(fromBase, i);
 				}
 			}
 
 			return result;
 		}
 
-		public static int FromHex(string number, int fromBase)
+		public static int FromHex(string number)
 		{
-			switch (fromBase)
+			number = number.ToLower();
+
+			if (IsCorrectDigit(number, '0', 'f') is false)
 			{
-				case 2:
-					if (IsCorrectDigit(number, '0', 'F') is false)
-					{
-						throw new FormatException("Неверный формат шестнадцатеричного числа");
-					}
-					break;
+				throw new FormatException("Неверный формат шестнадцатеричного числа");
 			}
 
 			var result = 0;
 
-			//for (int i = 0; i < number.Length; i++)
-			//{
-			//	var tmp = number[number.Length - i - 1];
-			//	if (tmp)
-			//		if (number[number.Length - i - 1] == '1')
-			//		{
-			//			result += (int)Math.Pow(fromBase, i);
-			//		}
-			//}
+			for (int i = 0; i < number.Length; i++)
+			{
+				var current = number[number.Length - i - 1];
+				int value;
+
+				if (current >= 'a' && current <= 'f')
+				{
+					value = current switch
+					{
+						'a' => 10,
+						'b' => 11,
+						'c' => 12,
+						'd' => 13,
+						'e' => 14,
+						'f' => 15,
+						_ => throw new NotImplementedException(),
+					};
+				}
+				else
+				{
+					value = int.Parse(current.ToString());
+				}
+
+				if (current != '0')
+				{
+					result += value * (int)Math.Pow(16, i);
+				}
+			}
 
 			return result;
 		}

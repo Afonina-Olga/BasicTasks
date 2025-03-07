@@ -133,7 +133,7 @@
 			// cbBase
 			// 
 			cbBase.FormattingEnabled = true;
-			cbBase.Items.AddRange(new object[] { "2", "3", "4", "5", "6", "7", "8", "9", "16" });
+			cbBase.Items.AddRange(new object[] { "2", "8", "16" });
 			cbBase.Location = new Point(137, 164);
 			cbBase.Name = "cbBase";
 			cbBase.Size = new Size(194, 28);

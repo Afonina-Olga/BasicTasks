@@ -41,31 +41,11 @@ namespace NumberSystems
 						break;
 
 					case 1:
-						Print(Converter.From(txtDigit.Text, 3), 3);
-						break;
-
-					case 2:
-						Print(Converter.From(txtDigit.Text, 4), 4);
-						break;
-
-					case 3:
-						Print(Converter.From(txtDigit.Text, 5), 5);
-						break;
-
-					case 4:
-						Print(Converter.From(txtDigit.Text, 6), 6);
-						break;
-
-					case 5:
-						Print(Converter.From(txtDigit.Text, 7), 7);
-						break;
-
-					case 6:
 						Print(Converter.From(txtDigit.Text, 8), 8);
 						break;
 
-					case 7:
-						Print(Converter.From(txtDigit.Text, 9), 9);
+					case 2:
+						Print(Converter.FromHex(txtDigit.Text), 16);
 						break;
 				}
 			}
