@@ -17,6 +17,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Swap", "Swap\Swap.csproj", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaxOfThree", "MaxOfThree\MaxOfThree.csproj", "{9C2E32F8-2E13-4075-AAB0-3F7BADE5AD12}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuadraticEquation", "QuadraticEquation\QuadraticEquation.csproj", "{EEBF1501-3DF4-4731-9674-B5889C865531}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeapYear", "LeapYear\LeapYear.csproj", "{6B78A4F9-0B92-4B04-B1C2-704F42540E50}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +55,14 @@ Global
 		{9C2E32F8-2E13-4075-AAB0-3F7BADE5AD12}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9C2E32F8-2E13-4075-AAB0-3F7BADE5AD12}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9C2E32F8-2E13-4075-AAB0-3F7BADE5AD12}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EEBF1501-3DF4-4731-9674-B5889C865531}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEBF1501-3DF4-4731-9674-B5889C865531}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEBF1501-3DF4-4731-9674-B5889C865531}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEBF1501-3DF4-4731-9674-B5889C865531}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B78A4F9-0B92-4B04-B1C2-704F42540E50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B78A4F9-0B92-4B04-B1C2-704F42540E50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B78A4F9-0B92-4B04-B1C2-704F42540E50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B78A4F9-0B92-4B04-B1C2-704F42540E50}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
