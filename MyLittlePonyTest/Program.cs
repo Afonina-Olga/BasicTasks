@@ -384,151 +384,151 @@ void PrintResult(int max)
 
 #endregion
 
-#region Окончательный результат
+//#region Окончательный результат
 
-var topics = new Topic[] {
-	new("Вопрос 1", [
-	new("Вариант 1", MyLittlePony.AppleJack),
-	new("Вариант 2", MyLittlePony.Rarity),
-	new("Вариант 3", MyLittlePony.PinkiePie),
-	new("Вариант 4", MyLittlePony.RainbowDash)]),
+//var topics = new Topic[] {
+//	new("Вопрос 1", [
+//	new("Вариант 1", MyLittlePony.AppleJack),
+//	new("Вариант 2", MyLittlePony.Rarity),
+//	new("Вариант 3", MyLittlePony.PinkiePie),
+//	new("Вариант 4", MyLittlePony.RainbowDash)]),
 
-	new("Вопрос 2", [
-	new("Вариант 1", MyLittlePony.AppleJack),
-	new("Вариант 2", MyLittlePony.Rarity),
-	new("Вариант 3", MyLittlePony.PinkiePie),
-	new("Вариант 4", MyLittlePony.RainbowDash)]),
+//	new("Вопрос 2", [
+//	new("Вариант 1", MyLittlePony.AppleJack),
+//	new("Вариант 2", MyLittlePony.Rarity),
+//	new("Вариант 3", MyLittlePony.PinkiePie),
+//	new("Вариант 4", MyLittlePony.RainbowDash)]),
 
-	new("Вопрос 3", [
-	new("Вариант 1", MyLittlePony.AppleJack),
-	new("Вариант 2", MyLittlePony.Rarity),
-	new("Вариант 3", MyLittlePony.PinkiePie),
-	new("Вариант 4", MyLittlePony.RainbowDash)]),
+//	new("Вопрос 3", [
+//	new("Вариант 1", MyLittlePony.AppleJack),
+//	new("Вариант 2", MyLittlePony.Rarity),
+//	new("Вариант 3", MyLittlePony.PinkiePie),
+//	new("Вариант 4", MyLittlePony.RainbowDash)]),
 
-	new("Вопрос 4", [
-	new("Вариант 1", MyLittlePony.AppleJack),
-	new("Вариант 2", MyLittlePony.Rarity),
-	new("Вариант 3", MyLittlePony.PinkiePie),
-	new("Вариант 4", MyLittlePony.RainbowDash)]),
+//	new("Вопрос 4", [
+//	new("Вариант 1", MyLittlePony.AppleJack),
+//	new("Вариант 2", MyLittlePony.Rarity),
+//	new("Вариант 3", MyLittlePony.PinkiePie),
+//	new("Вариант 4", MyLittlePony.RainbowDash)]),
 
-	new("Вопрос 5", [
-	new("Вариант 1", MyLittlePony.AppleJack),
-	new("Вариант 2", MyLittlePony.Rarity),
-	new("Вариант 3", MyLittlePony.PinkiePie),
-	new("Вариант 4", MyLittlePony.RainbowDash)]),
-};
+//	new("Вопрос 5", [
+//	new("Вариант 1", MyLittlePony.AppleJack),
+//	new("Вариант 2", MyLittlePony.Rarity),
+//	new("Вариант 3", MyLittlePony.PinkiePie),
+//	new("Вариант 4", MyLittlePony.RainbowDash)]),
+//};
 
-foreach (var topic in topics)
-{
-	byte answer;
+//foreach (var topic in topics)
+//{
+//	byte answer;
 
-	do
-	{
-		Console.WriteLine();
-		Console.WriteLine(topic.ToString());
-		Console.Write("Ваш ответ: ");
-		_ = byte.TryParse(Console.ReadLine(), out answer);
-	} while (answer < 1 || answer > 4);
+//	do
+//	{
+//		Console.WriteLine();
+//		Console.WriteLine(topic.ToString());
+//		Console.Write("Ваш ответ: ");
+//		_ = byte.TryParse(Console.ReadLine(), out answer);
+//	} while (answer < 1 || answer > 4);
 
-	var res = topic.Answers[answer - 1];
-	Result.Answer(res.Result);
-}
+//	var res = topic.Answers[answer - 1];
+//	Result.Answer(res.Result);
+//}
 
-Console.WriteLine(Result.GetResult());
+//Console.WriteLine(Result.GetResult());
 
-class Topic(string question, Item[] answers)
-{
-	public string Question { get; set; } = question;
-	public Item[] Answers { get; set; } = answers;
+//class Topic(string question, Item[] answers)
+//{
+//	public string Question { get; set; } = question;
+//	public Item[] Answers { get; set; } = answers;
 
-	public override string ToString()
-	{
-		var sb = new StringBuilder();
-		sb.Append(Question);
-		sb.Append(Environment.NewLine);
+//	public override string ToString()
+//	{
+//		var sb = new StringBuilder();
+//		sb.Append(Question);
+//		sb.Append(Environment.NewLine);
 
-		for (int i = 0; i < Answers.Length; i++)
-		{
-			sb.Append($"{i + 1}. ");
-			sb.Append(Answers[i].Option);
-			sb.Append(Environment.NewLine);
-		}
+//		for (int i = 0; i < Answers.Length; i++)
+//		{
+//			sb.Append($"{i + 1}. ");
+//			sb.Append(Answers[i].Option);
+//			sb.Append(Environment.NewLine);
+//		}
 
-		return sb.ToString();
-	}
-}
+//		return sb.ToString();
+//	}
+//}
 
-class Item(string option, MyLittlePony result)
-{
-	public MyLittlePony Result { get; set; } = result;
-	public string Option { get; set; } = option;
-}
+//class Item(string option, MyLittlePony result)
+//{
+//	public MyLittlePony Result { get; set; } = result;
+//	public string Option { get; set; } = option;
+//}
 
-static class Result
-{
-	class Item(MyLittlePony name, byte value)
-	{
-		public MyLittlePony Name { get; set; } = name;
-		public byte Value { get; set; } = value;
-	}
+//static class Result
+//{
+//	class Item(MyLittlePony name, byte value)
+//	{
+//		public MyLittlePony Name { get; set; } = name;
+//		public byte Value { get; set; } = value;
+//	}
 
-	public static byte PinkiePie { get; set; } = 0;
-	public static byte RainbowDash { get; set; } = 0;
-	public static byte AppleJack { get; set; } = 0;
-	public static byte Rarity { get; set; } = 0;
+//	public static byte PinkiePie { get; set; } = 0;
+//	public static byte RainbowDash { get; set; } = 0;
+//	public static byte AppleJack { get; set; } = 0;
+//	public static byte Rarity { get; set; } = 0;
 
-	// Напечатать результат
-	public static string GetResult()
-	{
-		var tmp = new Item[]
-		{
-			new (MyLittlePony.PinkiePie, PinkiePie),
-			new (MyLittlePony.Rarity, Rarity),
-			new (MyLittlePony.AppleJack, AppleJack),
-			new (MyLittlePony.RainbowDash, RainbowDash),
-		};
+//	// Напечатать результат
+//	public static string GetResult()
+//	{
+//		var tmp = new Item[]
+//		{
+//			new (MyLittlePony.PinkiePie, PinkiePie),
+//			new (MyLittlePony.Rarity, Rarity),
+//			new (MyLittlePony.AppleJack, AppleJack),
+//			new (MyLittlePony.RainbowDash, RainbowDash),
+//		};
 
-		var sorted = tmp.OrderByDescending(x => x.Value).ToArray();
+//		var sorted = tmp.OrderByDescending(x => x.Value).ToArray();
 
-		var sb = new StringBuilder();
+//		var sb = new StringBuilder();
 
-		sb.Append("Результат теста: ");
-		sb.Append(Environment.NewLine);
+//		sb.Append("Результат теста: ");
+//		sb.Append(Environment.NewLine);
 
-		foreach (var s in sorted)
-		{
-			sb.Append($"{s.Name} - {s.Value}");
-			sb.Append(Environment.NewLine);
-		}
+//		foreach (var s in sorted)
+//		{
+//			sb.Append($"{s.Name} - {s.Value}");
+//			sb.Append(Environment.NewLine);
+//		}
 
-		sb.Append(Environment.NewLine);
+//		sb.Append(Environment.NewLine);
 
-		var maxValue = sorted[0].Value;
-		var result = sorted.Where(x => x.Value == maxValue);
+//		var maxValue = sorted[0].Value;
+//		var result = sorted.Where(x => x.Value == maxValue);
 
-		sb.Append("Из мира My Little Pony Вы: ");
-		sb.Append(string.Join(", ", result.Select(x => x.Name)));
+//		sb.Append("Из мира My Little Pony Вы: ");
+//		sb.Append(string.Join(", ", result.Select(x => x.Name)));
 
-		return sb.ToString();
-	}
+//		return sb.ToString();
+//	}
 
-	// Ответить на вопрос
-	public static void Answer(MyLittlePony answer) => _ = answer switch
-	{
-		MyLittlePony.PinkiePie => PinkiePie++,
-		MyLittlePony.RainbowDash => RainbowDash++,
-		MyLittlePony.AppleJack => AppleJack++,
-		MyLittlePony.Rarity => Rarity++,
-		_ => throw new ArgumentException()
-	};
-}
+//	// Ответить на вопрос
+//	public static void Answer(MyLittlePony answer) => _ = answer switch
+//	{
+//		MyLittlePony.PinkiePie => PinkiePie++,
+//		MyLittlePony.RainbowDash => RainbowDash++,
+//		MyLittlePony.AppleJack => AppleJack++,
+//		MyLittlePony.Rarity => Rarity++,
+//		_ => throw new ArgumentException()
+//	};
+//}
 
-enum MyLittlePony
-{
-	PinkiePie,
-	RainbowDash,
-	AppleJack,
-	Rarity
-}
+//enum MyLittlePony
+//{
+//	PinkiePie,
+//	RainbowDash,
+//	AppleJack,
+//	Rarity
+//}
 
-#endregion
+//#endregion

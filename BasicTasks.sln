@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quiz", "Quiz\Quiz.csproj", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyLittlePonyTest", "MyLittlePonyTest\MyLittlePonyTest.csproj", "{7C5DC8D9-362C-4C23-B99F-769CFEFB1491}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NumberSystems", "NumberSystems\NumberSystems.csproj", "{5AFC5A21-BBD4-44F3-8331-E3829F044BEA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{7C5DC8D9-362C-4C23-B99F-769CFEFB1491}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7C5DC8D9-362C-4C23-B99F-769CFEFB1491}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7C5DC8D9-362C-4C23-B99F-769CFEFB1491}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5AFC5A21-BBD4-44F3-8331-E3829F044BEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AFC5A21-BBD4-44F3-8331-E3829F044BEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AFC5A21-BBD4-44F3-8331-E3829F044BEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AFC5A21-BBD4-44F3-8331-E3829F044BEA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
