@@ -2,7 +2,7 @@
 var result = 0;
 var count = 2;
 
-Console.WriteLine(new string('-', 60));
+Console.WriteLine(new string('-', 60)); // строчка из 60 тире
 Console.WriteLine("1. Какой герой мультфильма испугался Того-кто-сидит-в-пруду?");
 Console.WriteLine("1. Крошка енот");
 Console.WriteLine("2. Котенок Гав");

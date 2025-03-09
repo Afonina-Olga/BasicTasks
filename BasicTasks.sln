@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactorialNonRecursive", "Fa
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01 - Викторины", "01 - Викторины", "{36D591C7-65C7-A0D1-1CBC-10CDE441BDC8}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02 - Системы счисления", "02 - Системы счисления", "{0A5FE3DB-A00D-488B-BDA7-79A2256550D6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -84,6 +86,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{536B3444-4946-4A83-8C95-A0F1B6AE8876} = {36D591C7-65C7-A0D1-1CBC-10CDE441BDC8}
 		{7C5DC8D9-362C-4C23-B99F-769CFEFB1491} = {36D591C7-65C7-A0D1-1CBC-10CDE441BDC8}
+		{5AFC5A21-BBD4-44F3-8331-E3829F044BEA} = {0A5FE3DB-A00D-488B-BDA7-79A2256550D6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A2A07D4B-2316-4EE4-9C00-8D60CCA62FB4}

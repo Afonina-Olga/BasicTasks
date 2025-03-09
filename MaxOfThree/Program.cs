@@ -45,6 +45,7 @@ if (b >= max)
 {
 	max = b;
 }
+
 // Почему нельзя else объяснить
 if (c >= max)
 {
@@ -82,11 +83,11 @@ Console.WriteLine($"Max = {max}");
 
 max = Max(a, Max(b, c));
 
+Console.WriteLine($"Max = {max}");
+
 static int Max(int a, int b)
 {
 	return a >= b ? a : b;
 }
-
-Console.WriteLine($"Max = {max}");
 
 #endregion
