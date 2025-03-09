@@ -33,6 +33,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CountOddNumbers", "CountOdd
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GreatestCommonDivisor", "GreatestCommonDivisor\GreatestCommonDivisor.csproj", "{5F9687D1-A8DB-4E5A-AC60-E1765A114DAC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeastCommonMultiple", "LeastCommonMultiple\LeastCommonMultiple.csproj", "{7BE8744F-C6A5-4A2A-AEA1-8322ADBBD0F4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -91,6 +93,10 @@ Global
 		{5F9687D1-A8DB-4E5A-AC60-E1765A114DAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5F9687D1-A8DB-4E5A-AC60-E1765A114DAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5F9687D1-A8DB-4E5A-AC60-E1765A114DAC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BE8744F-C6A5-4A2A-AEA1-8322ADBBD0F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BE8744F-C6A5-4A2A-AEA1-8322ADBBD0F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BE8744F-C6A5-4A2A-AEA1-8322ADBBD0F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BE8744F-C6A5-4A2A-AEA1-8322ADBBD0F4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
