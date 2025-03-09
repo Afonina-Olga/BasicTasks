@@ -12,8 +12,14 @@
 		// 3. Обновите десятичное число, присвоив ему значение частного от предыдущего деления.
 		// 4. Повторяйте шаги 1-3, пока десятичное число не станет равно 0.
 		// 5. Двоичное число — это записанные остатки в обратном порядке.
-		public static string ToBinary(int number)
+
+		public static string To(int number, int toBase)
 		{
+			if (number < 0)
+			{
+				throw new NotImplementedException("Работа с отрицательными числами не реализована");
+			}
+
 			if (number == 0)
 			{
 				return "0";
@@ -23,28 +29,9 @@
 
 			while (number > 0)
 			{
-				int remainder = number % 2;
+				int remainder = number % toBase;
 				result = remainder + result;
-				number /= 2;
-			}
-
-			return result;
-		}
-
-		public static string To(int number, int @base)
-		{
-			if (number == 0)
-			{
-				return "0";
-			}
-
-			var result = "";
-
-			while (number > 0)
-			{
-				int remainder = number % @base;
-				result = remainder + result;
-				number /= @base;
+				number /= toBase;
 			}
 
 			return result;
@@ -56,14 +43,23 @@
 		// образом: 1*2^3 + 1*2^2 + 0*2^1 + 1*2^0 = 8 + 4 + 0 + 1 = 13.
 		public static int From(string number, int fromBase)
 		{
-			switch (fromBase)
+			if (fromBase == 2)
 			{
-				case 2:
-					if (IsCorrectDigit(number, '0', '1') is false)
-					{
-						throw new FormatException("Неверный формат двоичного числа");
-					}
-					break;
+				if (IsCorrectDigit(number, '0', '1') is false)
+				{
+					throw new FormatException("Неверный формат двоичного числа");
+				}
+			}
+			else if (fromBase == 8)
+			{
+				if (IsCorrectDigit(number, '0', '7') is false)
+				{
+					throw new FormatException("Неверный формат восьмеричного числа");
+				}
+			}
+			else
+			{
+				throw new ArgumentException("Неверный формат основания");
 			}
 
 			var result = 0;
@@ -83,6 +79,11 @@
 
 		public static int FromHex(string number)
 		{
+			if (IsCorrectDigit(number, '0', 'f') is false)
+			{
+				throw new FormatException("Неверный формат шестнадцатеричного числа");
+			}
+
 			number = number.ToLower();
 
 			if (IsCorrectDigit(number, '0', 'f') is false)
@@ -130,6 +131,11 @@
 		// 4. Запишем полученные остатки в обратном порядке и получим искомое число.
 		public static string ToHex(int number)
 		{
+			if (number < 0)
+			{
+				throw new NotImplementedException("Работа с отрицательными числами не реализована");
+			}
+
 			if (number == 0)
 			{
 				return "0";

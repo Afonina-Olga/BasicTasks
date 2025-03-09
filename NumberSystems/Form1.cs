@@ -1,5 +1,3 @@
-using System.Numerics;
-
 namespace NumberSystems
 {
 	public partial class Form1 : Form
@@ -17,7 +15,7 @@ namespace NumberSystems
 			{
 				case 0:
 
-					Print(Converter.ToBinary((int)numDigit.Value), 2);
+					Print(Converter.To((int)numDigit.Value, 2), 2);
 					break;
 
 				case 1:
