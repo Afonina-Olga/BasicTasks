@@ -15,5 +15,19 @@ while (number != 0)
 }
 
 Console.WriteLine($"Обратное число = {result}");
+Console.WriteLine($"Обратное число = {Reverse(number.ToString())}");
 
 // Способ с массивами показать
+string Reverse(string value)
+{
+	var array = "1234".ToCharArray();
+	for (int i = 0; i < array.Length / 2; i++)
+	{
+		char temp = array[i];
+		array[i] = array[array.Length - i - 1];
+		array[array.Length - i - 1] = temp;
+	}
+	return new(array); // или array.ToString();
+}
+
+
