@@ -8,4 +8,3 @@ for (ulong i = 1; i <= number; i++)
 }
 
 Console.WriteLine($"Факториал = {factorial}");
-// Заодно показать как объявлять переменные, почему тут ulong
