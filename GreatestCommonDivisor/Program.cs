@@ -1,10 +1,11 @@
 ﻿// Максимальное число, на которое могут быть без остатка разделены оба числа
+// Наибольший общий делитель
 
 Console.Write("Введите первое число: ");
-var number1 = int.Parse(Console.ReadLine());
+var number1 = int.Parse(Console.ReadLine()!);
 
 Console.Write("Введите второе число: ");
-var number2 = int.Parse(Console.ReadLine());
+var number2 = int.Parse(Console.ReadLine()!);
 
 int gcd = 0;
 
