@@ -30,4 +30,3 @@ for (int i = 1; i <= number; i++) // До number включительно
 
 	Console.WriteLine(i);
 }
-
